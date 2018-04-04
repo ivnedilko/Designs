@@ -1,0 +1,124 @@
+@import "normalize";
+@import "layout";
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans|Nunito:300,400,700,900|Playfair+Display');
+$text-color: #333333;
+$all-text-color: #b0b4bf;
+$primary-color: #d22425;
+$medium-grey: #393939;
+$light-gray: #dbdbdb;
+$header-font-family: 'Nunito', sans-serif;
+$else-font-family: 'Nunito Sans', sans-serif;
+$base-font-family: 'Playfair Display', serif;
+body {
+    font: 400 17px/1.6 $light-gray;
+    color: $text-color;
+}
+
+main
+{
+	max-width: 1580px;
+	padding: 0px 15px;
+	margin: 0 auto;
+}
+.title {
+    font-family: $header-font-family;
+    color: $primary-color;
+    font-weight: 900;
+    line-height: 1.5;
+    font-size: 100px;
+    letter-spacing: -20;
+    margin: 12px 57px;
+}
+h2, h3, h5, h6 {
+    font-family: $base-font-family;
+    font-weight: 400;
+    line-height: 1;
+    color: $light-gray;
+}
+.ba-subtitle {
+    font-size: 70px;
+}
+.ba-subtitle span {
+    color: $text-color;
+}
+.ba-suptitle {
+    font-size: 40px;
+}
+/* Typography */
+
+a, input[type="submit"], input[type="button"], button {
+    transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+input[type="submit"], input[type="button"], button, .ba-button {
+    display: inline-block;
+}
+input[type="submit"]:hover, input[type="button"]:hover, .ba-button:hover {
+    color: $primary-color;
+}
+input[type="text"], input[type="email"], input[type="password"], input[type="number"], input[type="tel"], textarea, select {
+    transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus, input[type="number"]:focus, input[type="tel"]:focus, textarea:focus, select:focus {}
+textarea {}
+
+.ba-top-block
+{
+	background: url("../img/layer.jpg") no-repeat;
+	background-position: left bottom;
+}
+
+.ba-site-menu
+{
+	display: block;
+	background: url ("../img/site_menu_button.jpg");
+	width: 31px;
+	height: 23px;
+}
+
+.ba-scroll {
+	display: block;
+	margin: 190px auto;
+	margin-bottom: 180px;
+    width: 50px;
+    height: 50px;
+    background: url("../img/button_bottom.png") no-repeat;
+    transition: transform .2s ease-in;
+}
+
+.ba-scroll:hover
+{
+	transform: translateY(-10px);
+}
+
+.ba-product-info, .ba-product-photo {
+    width: 50%;
+    display: inline-block;
+}
+.ba-product-info {
+    float: left;
+    background-position: url("img/what_we_do.png");
+}
+.ba-product-photo {
+    padding-left: 80px;
+}
+.ba-product-colomns {
+    max-width: 1175px;
+}
+.ba-info-title {
+    color: $text-color;
+    font-size: 60px;
+    font-family: $base-font-family;
+}
+.ba-info-subtitle {
+    font-family: $else-font-family;
+    font-weight: 700;
+}
+.ba-subtitle-text {
+    padding-left: 48px;
+}
+.ba-info-text {
+    font-family: $else-font-family;
+    font-size: 17px;
+    font-weight: 400;
+    color: $all-text-color;
+}
