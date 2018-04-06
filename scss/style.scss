@@ -16,15 +16,22 @@ body {
 
 main
 {
-	max-width: 1580px;
 	padding: 0px 15px;
 	margin: 0 auto;
 }
+
+.ba-container
+{
+    max-width: 1220px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
 .title {
     font-family: $header-font-family;
     color: $primary-color;
     font-weight: 900;
-    line-height: 1.5;
+    line-height: 0.8;
     font-size: 100px;
     letter-spacing: -20;
     margin: 12px 57px;
@@ -61,10 +68,21 @@ input[type="text"], input[type="email"], input[type="password"], input[type="num
 input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus, input[type="number"]:focus, input[type="tel"]:focus, textarea:focus, select:focus {}
 textarea {}
 
-.ba-top-block
+.ba-intro
 {
-	background: url("../img/layer.jpg") no-repeat;
-	background-position: left bottom;
+   position: relative;
+}
+
+.ba-intro:before
+{
+	content:"";
+    position: absolute;
+    width: 341px;
+    height: 728px;
+    background: url ("../img/layer.jpg") no-repeat;
+    z-index: 1;
+    left: -315px;
+    top: -100px;
 }
 
 .ba-site-menu
@@ -101,9 +119,13 @@ textarea {}
 .ba-product-photo {
     padding-left: 80px;
 }
-.ba-product-colomns {
-    max-width: 1175px;
+
+.ba-ideas_coloumn_2
+{
+   float: right;
+   margin: 0;
 }
+
 .ba-info-title {
     color: $text-color;
     font-size: 60px;
@@ -121,4 +143,18 @@ textarea {}
     font-size: 17px;
     font-weight: 400;
     color: $all-text-color;
+}
+
+.blockquote
+{
+    color: #848484;
+    max-width: 421px;
+    font-size: 14px;
+    margin-left: 118px;
+}
+
+.ba-col-6 p:first-letter
+{
+    font-size: 100px;
+    color: $text-color;
 }
